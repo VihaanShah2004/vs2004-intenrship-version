@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDAVA AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="popup-container">
+        <!-- Header -->
+        <div class="popup-header">
+            <img src="logo.png" alt="VIDAVA AI" class="logo">
+            <h1>VIDAVA AI</h1>
+        </div>
+
+        <!-- Main Content -->
+        <div class="popup-content" id="popupContent">
+            <!-- Login/Register Section -->
+            <div class="auth-section" id="authSection">
+                <div class="auth-tabs">
+                    <button class="tab-btn active" id="loginTab">Login</button>
+                    <button class="tab-btn" id="registerTab">Register</button>
+                </div>
+                
+                <div class="auth-form" id="loginForm">
+                    <input type="email" placeholder="Email" id="loginEmail">
+                    <div class="password-wrapper">
+                        <input type="password" placeholder="Password" id="loginPassword">
+                        <i class="fas fa-eye" id="toggleLoginPassword"></i>
+                    </div>
+                    <button class="btn primary-btn" id="loginBtn">Login</button>
+                    <a href="#" class="forgot-link">Forgot Password?</a>
+                </div>
+
+                <div class="auth-form hidden" id="registerForm">
+                    <input type="email" placeholder="Email" id="registerEmail">
+                    <div class="password-wrapper">
+                        <input type="password" placeholder="Password" id="registerPassword">
+                        <i class="fas fa-eye" id="toggleRegisterPassword"></i>
+                    </div>
+                    <button class="btn primary-btn" id="registerBtn">Register</button>
+                </div>
+            </div>
+
+            <!-- Main Dashboard Section -->
+            <div class="dashboard-section hidden" id="dashboardSection">
+                <!-- Quick Recommendation -->
+                <div class="quick-recommendation">
+                    <h3><i class="fas fa-magic"></i> Quick Recommendation</h3>
+                    <div class="recommendation-input">
+                        <input type="number" placeholder="Amount ($)" id="quickAmount" step="0.01">
+                        <select id="quickCategory">
+                            <option value="dining">Dining</option>
+                            <option value="groceries">Groceries</option>
+                            <option value="travel">Travel</option>
+                            <option value="gas">Gas</option>
+                            <option value="shopping">Shopping</option>
+                            <option value="entertainment">Entertainment</option>
+                            <option value="general">General</option>
+                        </select>
+                        <button class="btn primary-btn" id="getQuickRecommendation">Get Recommendation</button>
+                    </div>
+                    <div class="recommendation-result" id="quickRecommendationResult">
+                        <div class="placeholder">
+                            <i class="fas fa-credit-card"></i>
+                            <p>Enter amount and category for AI recommendation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My Cards -->
+                <div class="my-cards">
+                    <h3><i class="fas fa-credit-card"></i> My Cards</h3>
+                    <div class="cards-list" id="myCardsList">
+                        <div class="no-cards">
+                            <i class="fas fa-plus-circle"></i>
+                            <p>No cards added</p>
+                            <button class="btn secondary-btn" id="addCardBtn">Add Card</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="quick-actions">
+                    <button class="action-btn" id="openDashboard">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Full Dashboard</span>
+                    </button>
+                    <button class="action-btn" id="viewProfile">
+                        <i class="fas fa-user"></i>
+                        <span>Profile</span>
+                    </button>
+                    <button class="action-btn" id="logoutBtn">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>Logout</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Overlay -->
+        <div class="loading-overlay hidden" id="loadingOverlay">
+            <div class="spinner"></div>
+            <p>Processing...</p>
+        </div>
+
+        <!-- Message Display -->
+        <div class="message" id="message"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.15.0/dist/tf.min.js"></script>
+    <script src="storage/localStorage.js"></script>
+    <script src="ml/tensorflow-model.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>
