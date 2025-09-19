@@ -1,0 +1,340 @@
+/* Dashboard Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.recommendation-card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.recommendation-card .card-header {
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(135deg, #28a745, #20c997);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: 1px solid #e9ecef;
+    border-radius: 10px 10px 0 0;
+    font-weight: 600;
+}
+
+.recommendation-result {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.recommendation-item {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.recommendation-item h6 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.recommendation-item .card-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.recommendation-item .bank-name {
+    opacity: 0.9;
+    font-size: 0.9rem;
+}
+
+.recommendation-item .reward-rate {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffc107;
+}
+
+.recommendation-item .reasoning {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+.confidence-badge {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.card-item {
+    background-color: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.card-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.card-item .card-name {
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.card-item .bank-name {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.card-item .card-details {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.card-item .remove-btn {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-item .remove-btn:hover {
+    background-color: #c82333;
+}
+
+.available-card {
+    background-color: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.available-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.available-card .card-header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.available-card .card-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.available-card .bank-name {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.available-card .annual-fee {
+    background-color: #f8f9fa;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.available-card .rewards-section {
+    margin-bottom: 15px;
+}
+
+.available-card .reward-category {
+    display: inline-block;
+    background-color: #e3f2fd;
+    color: #1976d2;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.available-card .signup-bonus {
+    background-color: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.available-card .signup-bonus .bonus-amount {
+    font-weight: bold;
+    color: #856404;
+    font-size: 1.1rem;
+}
+
+.available-card .benefits {
+    margin-bottom: 15px;
+}
+
+.available-card .benefit-item {
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin-bottom: 3px;
+}
+
+.available-card .benefit-item:before {
+    content: "✓ ";
+    color: #28a745;
+    font-weight: bold;
+}
+
+.available-card .add-card-btn {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.available-card .add-card-btn:hover {
+    background-color: #218838;
+}
+
+.available-card .add-card-btn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.spending-analysis-item {
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.spending-analysis-item .category {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.spending-analysis-item .amount {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.spending-analysis-item .percentage {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid #f5c6cb;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid #c3e6cb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .recommendation-card .row {
+        flex-direction: column;
+    }
+    
+    .recommendation-card .col-md-6 {
+        margin-bottom: 20px;
+    }
+    
+    .available-card .card-header-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .available-card .annual-fee {
+        margin-top: 10px;
+    }
+}
+
+/* Animation for loading states */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}

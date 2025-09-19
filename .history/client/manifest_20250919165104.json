@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "VIDAVA AI - Smart Credit Card Assistant",
+  "version": "1.0.0",
+  "description": "AI-powered credit card recommendation tool that helps you maximize rewards and savings on every purchase.",
+  "author": "VIDAVA AI Team",
+  "homepage_url": "https://vidava.ai",
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "logo.png",
+    "default_title": "VIDAVA AI - Get Smart Credit Card Recommendations"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "logo.png",
+        "dashboard.html",
+        "ml/*",
+        "storage/*"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
+}

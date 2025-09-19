@@ -1,0 +1,288 @@
+{
+    "creditCards": [
+        {
+            "id": "chase_sapphire_preferred",
+            "name": "Chase Sapphire Preferred",
+            "bank": "Chase",
+            "type": "Travel",
+            "annualFee": 95,
+            "creditScoreRequired": "Good to Excellent",
+            "creditLimitRange": {
+                "min": 5000,
+                "max": 50000,
+                "typical": 15000
+            },
+            "rewards": {
+                "travel": 2,
+                "dining": 2,
+                "other": 1
+            },
+            "signupBonus": {
+                "amount": 60000,
+                "currency": "points",
+                "spendingRequirement": 4000,
+                "timeframe": "3 months"
+            },
+            "benefits": [
+                "Travel insurance",
+                "No foreign transaction fees",
+                "Transfer partners",
+                "Primary rental car insurance"
+            ],
+            "categories": ["travel", "dining", "general"],
+            "features": {
+                "foreignTransactionFee": 0,
+                "balanceTransferFee": 0.05,
+                "cashAdvanceFee": 0.05,
+                "latePaymentFee": 40,
+                "aprRange": "21.49-28.49"
+            }
+        },
+    {
+      "id": "capital_one_venture",
+      "name": "Capital One Venture Rewards",
+      "bank": "Capital One",
+      "type": "Travel",
+      "annualFee": 95,
+      "creditScoreRequired": "Good to Excellent",
+      "creditLimitRange": {
+        "min": 5000,
+        "max": 30000,
+        "typical": 12000
+      },
+      "rewards": {
+        "travel": 2,
+        "other": 1
+      },
+      "signupBonus": {
+        "amount": 75000,
+        "currency": "miles",
+        "spendingRequirement": 4000,
+        "timeframe": "3 months"
+      },
+      "benefits": [
+        "Global Entry/TSA PreCheck credit",
+        "No foreign transaction fees",
+        "Travel accident insurance"
+      ],
+      "categories": ["travel", "general"],
+      "features": {
+        "foreignTransactionFee": 0,
+        "balanceTransferFee": 0.03,
+        "cashAdvanceFee": 0.03,
+        "latePaymentFee": 40,
+        "aprRange": "19.99-29.99"
+      }
+    },
+    {
+      "id": "chase_freedom_unlimited",
+      "name": "Chase Freedom Unlimited",
+      "bank": "Chase",
+      "type": "Cashback",
+      "annualFee": 0,
+      "creditScoreRequired": "Good",
+      "rewards": {
+        "other": 1.5
+      },
+      "signupBonus": {
+        "amount": 200,
+        "currency": "cashback",
+        "spendingRequirement": 500,
+        "timeframe": "3 months"
+      },
+      "benefits": [
+        "No annual fee",
+        "5% on travel through Chase Ultimate Rewards",
+        "3% on dining and drugstores"
+      ],
+      "categories": ["general", "dining", "travel"]
+    },
+    {
+      "id": "citi_double_cash",
+      "name": "Citi Double Cash",
+      "bank": "Citi",
+      "type": "Cashback",
+      "annualFee": 0,
+      "creditScoreRequired": "Good to Excellent",
+      "rewards": {
+        "other": 2
+      },
+      "signupBonus": {
+        "amount": 0,
+        "currency": "cashback",
+        "spendingRequirement": 0,
+        "timeframe": "N/A"
+      },
+      "benefits": [
+        "No annual fee",
+        "2% on all purchases",
+        "18-month intro APR"
+      ],
+      "categories": ["general"]
+    },
+    {
+      "id": "amex_gold",
+      "name": "American Express Gold Card",
+      "bank": "American Express",
+      "type": "Dining & Groceries",
+      "annualFee": 250,
+      "creditScoreRequired": "Good to Excellent",
+      "rewards": {
+        "dining": 4,
+        "groceries": 4,
+        "travel": 3,
+        "other": 1
+      },
+      "signupBonus": {
+        "amount": 60000,
+        "currency": "points",
+        "spendingRequirement": 4000,
+        "timeframe": "6 months"
+      },
+      "benefits": [
+        "$120 dining credit annually",
+        "$120 Uber credit annually",
+        "No foreign transaction fees",
+        "Airport lounge access"
+      ],
+      "categories": ["dining", "groceries", "travel", "general"]
+    },
+    {
+      "id": "chase_freedom_flex",
+      "name": "Chase Freedom Flex",
+      "bank": "Chase",
+      "type": "Rotating Categories",
+      "annualFee": 0,
+      "creditScoreRequired": "Good",
+      "rewards": {
+        "rotating": 5,
+        "dining": 3,
+        "drugstores": 3,
+        "other": 1
+      },
+      "signupBonus": {
+        "amount": 200,
+        "currency": "cashback",
+        "spendingRequirement": 500,
+        "timeframe": "3 months"
+      },
+      "benefits": [
+        "No annual fee",
+        "5% rotating categories",
+        "Cell phone protection",
+        "Purchase protection"
+      ],
+      "categories": ["rotating", "dining", "drugstores", "general"]
+    },
+    {
+      "id": "wells_fargo_active_cash",
+      "name": "Wells Fargo Active Cash",
+      "bank": "Wells Fargo",
+      "type": "Cashback",
+      "annualFee": 0,
+      "creditScoreRequired": "Good",
+      "rewards": {
+        "other": 2
+      },
+      "signupBonus": {
+        "amount": 200,
+        "currency": "cashback",
+        "spendingRequirement": 1000,
+        "timeframe": "3 months"
+      },
+      "benefits": [
+        "No annual fee",
+        "2% on all purchases",
+        "Cell phone protection",
+        "Purchase protection"
+      ],
+      "categories": ["general"]
+    },
+    {
+      "id": "capital_one_quicksilver",
+      "name": "Capital One Quicksilver",
+      "bank": "Capital One",
+      "type": "Cashback",
+      "annualFee": 0,
+      "creditScoreRequired": "Good",
+      "rewards": {
+        "other": 1.5
+      },
+      "signupBonus": {
+        "amount": 200,
+        "currency": "cashback",
+        "spendingRequirement": 500,
+        "timeframe": "3 months"
+      },
+      "benefits": [
+        "No annual fee",
+        "No foreign transaction fees",
+        "Extended warranty"
+      ],
+      "categories": ["general"]
+    },
+    {
+      "id": "discover_it_cashback",
+      "name": "Discover it Cash Back",
+      "bank": "Discover",
+      "type": "Rotating Categories",
+      "annualFee": 0,
+      "creditScoreRequired": "Fair to Good",
+      "rewards": {
+        "rotating": 5,
+        "other": 1
+      },
+      "signupBonus": {
+        "amount": 0,
+        "currency": "cashback",
+        "spendingRequirement": 0,
+        "timeframe": "N/A"
+      },
+      "benefits": [
+        "No annual fee",
+        "5% rotating categories",
+        "Cashback match first year",
+        "No foreign transaction fees"
+      ],
+      "categories": ["rotating", "general"]
+    },
+    {
+      "id": "bank_of_america_customized_cash",
+      "name": "Bank of America Customized Cash Rewards",
+      "bank": "Bank of America",
+      "type": "Category Cashback",
+      "annualFee": 0,
+      "creditScoreRequired": "Good",
+      "rewards": {
+        "selected_category": 3,
+        "groceries": 2,
+        "wholesale": 2,
+        "other": 1
+      },
+      "signupBonus": {
+        "amount": 200,
+        "currency": "cashback",
+        "spendingRequirement": 1000,
+        "timeframe": "90 days"
+      },
+      "benefits": [
+        "No annual fee",
+        "Choose your 3% category",
+        "Online banking bonus"
+      ],
+      "categories": ["custom", "groceries", "wholesale", "general"]
+    }
+  ],
+  "merchantCategories": {
+    "dining": ["restaurants", "fast_food", "bars", "cafes", "food_delivery"],
+    "groceries": ["supermarkets", "grocery_stores", "wholesale_clubs"],
+    "travel": ["airlines", "hotels", "car_rental", "travel_agencies", "gas_stations"],
+    "gas": ["gas_stations", "fuel"],
+    "drugstores": ["pharmacies", "drugstores"],
+    "wholesale": ["costco", "sam's_club", "bj's"],
+    "entertainment": ["movies", "streaming", "concerts", "sports"],
+    "utilities": ["electric", "water", "internet", "phone"],
+    "shopping": ["department_stores", "online_shopping", "clothing"],
+    "general": ["other", "miscellaneous"]
+  }
+}

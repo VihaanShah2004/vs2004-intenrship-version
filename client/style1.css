@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f5;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container1 {
+    background-color: #181818;
+    padding: 40px;
+    width: 340px;
+}
+
+.logo img {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    width: 65px;
+    margin-bottom: 20px;
+}
+
+.welcome-text1 h1 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.welcome-text1 p {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f5;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #181818;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.welcome-text h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.welcome-text p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-fields input[type="email"],
+.input-fields input[type="password"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-fields input[type="email"]:focus,
+.input-fields input[type="password"]:focus {
+    border-color: #888;
+}
+
+.register-btn {
+    background-color: #333;
+    border: 1px solid #555;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #555;
+}
+
+
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ensure both fields take full width of the container */
+}
+
+.input-field {
+    width: 100%; /* Set both fields to full width */
+    padding-right: 30px; /* Allow space for the eye icon */
+    box-sizing: border-box; /* Ensure padding doesn't increase field width */
+}
+
+.password-wrapper {
+    position: relative;
+    width: 100%; /* Match the email input width */
+}
+
+#togglePassword {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    box-sizing: border-box;
+    padding-right: 30px; /* Space for the eye icon */
+}
+

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDAVA AI Extension Test Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+        .test-section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .test-section h3 {
+            color: #ffd700;
+            margin-top: 0;
+        }
+        .test-button {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            margin: 10px 5px;
+            transition: all 0.3s ease;
+        }
+        .test-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+        }
+        .status {
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-weight: 500;
+        }
+        .status.success {
+            background: rgba(46, 204, 113, 0.2);
+            border: 1px solid rgba(46, 204, 113, 0.5);
+            color: #2ecc71;
+        }
+        .status.error {
+            background: rgba(231, 76, 60, 0.2);
+            border: 1px solid rgba(231, 76, 60, 0.5);
+            color: #e74c3c;
+        }
+        .status.info {
+            background: rgba(52, 152, 219, 0.2);
+            border: 1px solid rgba(52, 152, 219, 0.5);
+            color: #3498db;
+        }
+        .demo-content {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        .demo-content h4 {
+            color: #ffd700;
+            margin-top: 0;
+        }
+        .instructions {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid #ffd700;
+        }
+        .instructions h2 {
+            color: #ffd700;
+            margin-top: 0;
+        }
+        .instructions ol {
+            padding-left: 20px;
+        }
+        .instructions li {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .code-block {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            margin: 10px 0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 VIDAVA AI Extension Test Page</h1>
+        
+        <div class="instructions">
+            <h2>📋 Installation Instructions</h2>
+            <ol>
+                <li><strong>Open Chrome</strong> and go to <code>chrome://extensions/</code></li>
+                <li><strong>Enable Developer Mode</strong> (toggle in top-right corner)</li>
+                <li><strong>Click "Load unpacked"</strong> and select the <code>client</code> folder</li>
+                <li><strong>Pin the extension</strong> to your toolbar for easy access</li>
+                <li><strong>Refresh this page</strong> and start testing!</li>
+            </ol>
+        </div>
+
+        <div class="test-section">
+            <h3>🔍 Extension Status Check</h3>
+            <button class="test-button" onclick="checkExtensionStatus()">Check Extension Status</button>
+            <div id="extensionStatus" class="status info">Click the button above to check if the extension is loaded</div>
+        </div>
+
+        <div class="test-section">
+            <h3>🧪 Demo Scenarios</h3>
+            <p>These sections simulate different types of websites to test the extension's detection capabilities:</p>
+            
+            <div class="demo-content">
+                <h4>🍎 Apple Store Simulation</h4>
+                <p>Test brand-specific recommendation for Apple purchases.</p>
+                <button class="test-button" onclick="simulateApple()">Simulate Apple.com</button>
+            </div>
+
+            <div class="demo-content">
+                <h4>🛒 Amazon Shopping Simulation</h4>
+                <p>Test Amazon Prime card recommendation.</p>
+                <button class="test-button" onclick="simulateAmazon()">Simulate Amazon.com</button>
+            </div>
+
+            <div class="demo-content">
+                <h4>🎯 Target Store Simulation</h4>
+                <p>Test Target RedCard recommendation.</p>
+                <button class="test-button" onclick="simulateTarget()">Simulate Target.com</button>
+            </div>
+
+            <div class="demo-content">
+                <h4>🏪 Costco Wholesale Simulation</h4>
+                <p>Test Costco Visa card recommendation.</p>
+                <button class="test-button" onclick="simulateCostco()">Simulate Costco.com</button>
+            </div>
+
+            <div class="demo-content">
+                <h4>🍕 Dining/Restaurant Simulation</h4>
+                <p>Test dining category recommendations.</p>
+                <button class="test-button" onclick="simulateDining()">Simulate Starbucks.com</button>
+            </div>
+
+            <div class="demo-content">
+                <h4>✈️ Travel/Booking Simulation</h4>
+                <p>Test travel category recommendations.</p>
+                <button class="test-button" onclick="simulateTravel()">Simulate Expedia.com</button>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h3>🎯 Extension Features Test</h3>
+            <button class="test-button" onclick="testPopup()">Test Extension Popup</button>
+            <button class="test-button" onclick="testLocalStorage()">Test Local Storage</button>
+            <button class="test-button" onclick="testMLModel()">Test ML Model</button>
+            <div id="featureTestResults"></div>
+        </div>
+
+        <div class="test-section">
+            <h3>📊 Test Results</h3>
+            <div id="testResults">
+                <div class="status info">Run tests above to see results here</div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h3>🛠️ Debug Information</h3>
+            <button class="test-button" onclick="showDebugInfo()">Show Debug Info</button>
+            <div id="debugInfo" class="code-block" style="display: none;"></div>
+        </div>
+    </div>
+
+    <script>
+        // Test functions
+        function checkExtensionStatus() {
+            const statusDiv = document.getElementById('extensionStatus');
+            
+            if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.id) {
+                statusDiv.className = 'status success';
+                statusDiv.innerHTML = '✅ Extension is loaded and active! Extension ID: ' + chrome.runtime.id;
+            } else {
+                statusDiv.className = 'status error';
+                statusDiv.innerHTML = '❌ Extension not detected. Make sure you\'ve loaded it in Chrome extensions.';
+            }
+        }
+
+        function simulateDining() {
+            // Simulate dining website content
+            document.title = 'Restaurant Menu - Pizza Palace - Order Food Online';
+            addTestResult('Dining simulation activated. Check extension popup for recommendations.');
+        }
+
+        function simulateShopping() {
+            // Simulate shopping website content
+            document.title = 'Amazon - Shop Electronics, Clothing & More';
+            addTestResult('Shopping simulation activated. Check extension popup for recommendations.');
+        }
+
+        function simulateTravel() {
+            // Simulate travel website content
+            document.title = 'Expedia - Book Hotels, Flights & Car Rentals';
+            addTestResult('Travel simulation activated. Check extension popup for recommendations.');
+        }
+
+        function simulateGas() {
+            // Simulate gas station content
+            document.title = 'Shell Gas Station - Find Locations & Fuel Prices';
+            addTestResult('Gas station simulation activated. Check extension popup for recommendations.');
+        }
+
+        function testPopup() {
+            if (typeof chrome !== 'undefined' && chrome.action) {
+                chrome.action.openPopup();
+                addTestResult('✅ Popup test initiated - check if popup opened');
+            } else {
+                addTestResult('❌ Cannot test popup - extension not detected');
+            }
+        }
+
+        function testLocalStorage() {
+            try {
+                // Test localStorage functionality
+                const testData = {
+                    test: 'VIDAVA AI Extension Test',
+                    timestamp: new Date().toISOString(),
+                    userAgent: navigator.userAgent
+                };
+                
+                localStorage.setItem('vidava_test', JSON.stringify(testData));
+                const retrieved = JSON.parse(localStorage.getItem('vidava_test'));
+                
+                if (retrieved && retrieved.test === testData.test) {
+                    addTestResult('✅ Local storage test passed');
+                } else {
+                    addTestResult('❌ Local storage test failed');
+                }
+            } catch (error) {
+                addTestResult('❌ Local storage test error: ' + error.message);
+            }
+        }
+
+        function testMLModel() {
+            // Test if ML model is available
+            if (typeof CreditCardMLModel !== 'undefined') {
+                addTestResult('✅ ML model class is available');
+            } else {
+                addTestResult('⚠️ ML model class not loaded');
+            }
+        }
+
+        function addTestResult(message) {
+            const resultsDiv = document.getElementById('testResults');
+            const timestamp = new Date().toLocaleTimeString();
+            const resultDiv = document.createElement('div');
+            resultDiv.className = 'status info';
+            resultDiv.innerHTML = `[${timestamp}] ${message}`;
+            resultsDiv.appendChild(resultDiv);
+        }
+
+        function showDebugInfo() {
+            const debugDiv = document.getElementById('debugInfo');
+            const debugInfo = {
+                userAgent: navigator.userAgent,
+                url: window.location.href,
+                title: document.title,
+                chromeExtension: typeof chrome !== 'undefined' ? 'Available' : 'Not Available',
+                localStorage: typeof Storage !== 'undefined' ? 'Available' : 'Not Available',
+                mlModel: typeof CreditCardMLModel !== 'undefined' ? 'Available' : 'Not Available',
+                timestamp: new Date().toISOString()
+            };
+            
+            debugDiv.innerHTML = JSON.stringify(debugInfo, null, 2);
+            debugDiv.style.display = debugDiv.style.display === 'none' ? 'block' : 'none';
+        }
+
+        // Auto-check extension status on page load
+        window.addEventListener('load', () => {
+            setTimeout(checkExtensionStatus, 1000);
+        });
+    </script>
+</body>
+</html>
